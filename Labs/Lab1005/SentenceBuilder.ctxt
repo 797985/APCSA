@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=SentenceBuilder
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ SentenceBuilder\ here.\r\n\r\n\ @author\ (Nick\ Gonzales)\r\n\ @version\ (10/05/18)\r\n
+comment1.params=
+comment1.target=java.lang.String\ getRandomNoun()
+comment2.params=
+comment2.target=java.lang.String\ getRandomVerb()
+comment3.params=
+comment3.target=java.lang.String\ getRandomAdjective()
+comment4.params=
+comment4.target=java.lang.String\ getRandomDeterminer()
+comment5.params=
+comment5.target=java.lang.String\ getRandomAdverb()
+numComments=6
