@@ -2,14 +2,18 @@
 /**
  * Write a description of class Runner here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Nick Gonzales)
+ * @version (10/11/18)
  */
-public class GibberishRunner
+public class gibberishRunner
 {
+    //The Gibberish Runner is so we can run the program
     public static void run(){
-        WordList5000 wordList5000 = new WordList5000();
+        WordList5000 wordList5000 = new WordList5000(); //defines wordList5000
         Gibberish gibberish = new Gibberish();
-        System.out.println(gibberish);
+
+        String answer;
+        answer = gibberish.makeGibberish(wordList5000);
+        System.out.println(answer); //prints answer
     }
 }
