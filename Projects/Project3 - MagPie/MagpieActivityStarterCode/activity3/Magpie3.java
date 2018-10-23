@@ -1,3 +1,5 @@
+package activity3;
+
 /**
  * A program to carry on conversations with a human user.
  * This version: 
@@ -5,8 +7,8 @@
  *    Uses advanced search for keywords 
  * </li></ul> 
  *    
- * @author Laurie White
- * @version April 2012
+ * @author Nick Gonzales
+ * @version October 23, 2018
  */
 public class Magpie3
 {
@@ -68,8 +70,7 @@ public class Magpie3
 	 * @return the index of the first occurrence of goal in
 	 *         statement or -1 if it's not found
 	 */
-	private int findKeyword(String statement, String goal,
-			int startPos)
+	private int findKeyword(String statement, String goal, int startPos)
 	{
 		String phrase = statement.trim().toLowerCase();
 		goal = goal.toLowerCase();
@@ -98,8 +99,7 @@ public class Magpie3
 
 			// If before and after aren't letters, we've
 			// found the word
-			if (((before.compareTo("a") < 0) || (before
-					.compareTo("z") > 0)) // before is not a
+			if (((before.compareTo("a") < 0) || (before.compareTo("z") > 0)) // before is not a
 											// letter
 					&& ((after.compareTo("a") < 0) || (after
 							.compareTo("z") > 0)))

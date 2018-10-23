@@ -1,29 +1,35 @@
-import java.util.Scanner;
+package activity2;
+
 
 /**
- * A simple class to run the Magpie class.
- * @author Laurie White
- * @version April 2012
+ * Write a description of class MagpieRunner2 here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
  */
 public class MagpieRunner2
 {
+    // instance variables - replace the example below with your own
+    private int x;
 
-	/**
-	 * Create a Magpie, give it user input, and print its replies.
-	 */
-	public static void main(String[] args)
-	{
-		Magpie2 maggie = new Magpie2();
-		
-		System.out.println (maggie.getGreeting());
-		Scanner in = new Scanner (System.in);
-		String statement = in.nextLine();
-		
-		while (!statement.equals("Bye"))
-		{
-			System.out.println (maggie.getResponse(statement));
-			statement = in.nextLine();
-		}
-	}
+    /**
+     * Constructor for objects of class MagpieRunner2
+     */
+    public MagpieRunner2()
+    {
+        // initialise instance variables
+        x = 0;
+    }
 
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    public int sampleMethod(int y)
+    {
+        // put your code here
+        return x + y;
+    }
 }

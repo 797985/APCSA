@@ -1,8 +1,10 @@
+package activity3;
+
 /**
  * A program to allow students to try out different 
  * String methods. 
- * @author Laurie White
- * @version April 2012
+ * @author Nick Gonzales
+ * @version October 23, 2018
  */
 public class StringExplorer
 {
@@ -21,7 +23,7 @@ public class StringExplorer
 		System.out.println ("After toLowerCase(), sample = " + sample);
 		
 		//  Try other methods here:
-
+		int notFoundPsn = sample.indexOf("slow");
+		System.out.println("sample.indexOf(\"slow\") = " + notFoundPsn);
 	}
-
 }
