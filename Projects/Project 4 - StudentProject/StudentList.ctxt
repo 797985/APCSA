@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StudentList
+comment1.params=
+comment1.target=StudentList()
+comment2.params=newStudent
+comment2.target=void\ addStudent(Student)
+numComments=3
