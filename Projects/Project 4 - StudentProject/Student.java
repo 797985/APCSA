@@ -18,27 +18,34 @@ public class Student
         Gpa=y;
         Name=z;
     }
+
     public String addStudentName(){
         return sc.nextLine();
     }
+
     public int addStudentNumber(){
         return sc.nextInt();
-        
+
     }
+
     public double addStudentGpa(){
         return sc.nextDouble();
     }
+
     public void set (double Gpa){
-        GPA = (gpa);
+        Gpa = (3.3);
     }
-    public int getInt(){
+
+    //public int getInt(){
         
-    }
+    //}
+
     public void print(){
         System.out.println(Number);
     }
-    //public int getNumber(){
-        //return Number;
-    //}
-    
+
+    public int getNumber(){
+        return Number;
+    }
+
 }
