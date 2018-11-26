@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Pract14
+comment0.text=\r\n\ continued\ pract13\ and\ tables\ for\ multi\ arrays\r\n\r\n\ @author\ (Nick\ Gonzales)\r\n\ @version\ (11/26/18)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=x
+comment2.target=void\ display(int[][])
+numComments=3
