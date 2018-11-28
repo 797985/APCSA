@@ -16,10 +16,22 @@ public class Cell
         x = a;
         neighbors = new Cell[4]; // North, East, South, and West only 
     }
-
     
+    public Cell[] getNeighbors(){
+        return neighbors;
+    }
     
     public int getInt(){
         return x;
+    }
+    
+    public int getNeighborSum(){
+        int sum = 0;
+        for (int i =0; i<neighbors.length; i++){
+            if(neighbors[i] != null){
+                sum += neighbors[i].getInt();
+            }
+        }
+        return sum;
     }
 }
