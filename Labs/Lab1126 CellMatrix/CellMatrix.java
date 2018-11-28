@@ -63,7 +63,7 @@ public class CellMatrix{
                    cells[r][c].getNeighbors()[3]=cells[r+1][c];
                 }
             }
-        }
+        } 
     }
     //  Finds the sum of each of the neighbors and returns the greatest 
     // neighbor value
