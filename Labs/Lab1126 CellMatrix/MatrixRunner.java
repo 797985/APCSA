@@ -10,7 +10,8 @@ public class MatrixRunner{
     public static void main(){
       CellMatrix cm = new CellMatrix(3, 4);  
       cm.loadMatrix();
+      cm.loadCellNeighbors();
       cm.printMatrix();
-      cm.getGreatestNeighbors();
+      System.out.println("\n\n Largest neighbor value = " + cm.getGreatestNeighbors());
     }
 }

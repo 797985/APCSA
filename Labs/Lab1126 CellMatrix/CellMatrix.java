@@ -7,17 +7,16 @@
  */
 public class CellMatrix{
     /**
-     * Couldn't figure out how to get the greatest neighbor
+     * 
      */
 
     private Cell[][] cells;
-
     /**
      * +++++++++++++++++++++Constructor for objects of class NumberMatrix
      */
     public CellMatrix(int a, int b){
-        cells = new Cell[a][b];
 
+        cells = new Cell[a][b];
     }
 
     /**
@@ -49,15 +48,16 @@ public class CellMatrix{
 
     //  Load neighbor cells into the neighbors array
     public void loadCellNeighbors(){
+        
         for(int r=0; r<cells.length; r++){
             for(int c=0; c<cells[r].length; c++){
-                if(r>0){ //get north
+                if(r > 0){ //get north
                     cells[r][c].getNeighbors()[0]=cells[r-1][c];
                 }
                 if(c>0){ //get west
                     cells[r][c].getNeighbors()[1]=cells[r][c-1];
                 }
-                if(c<cells[0].length){ //get east
+                if(c<cells[0].length-1){ //get east
                     cells[r][c].getNeighbors()[2]=cells[r][c+1];
                 }
                 if(r<cells.length-1){ //get south
@@ -68,16 +68,19 @@ public class CellMatrix{
     }
     //  Finds the sum of each of the neighbors and returns the greatest 
     // neighbor value
-    //couldnt get getGreatestNeighbors to work
+    
     public int getGreatestNeighbors(){
-        int sum = 0;
-        for (int i =0; i<cells.length; i++){
-            if(cells[i] != null){
-                sum += cells[i].length;
+        int largest = 0;
+        for(int r=0; r < cells.length; r++){
+            for(int c=0; c < cells[r].length; c++){
+                int temp = cells[r][c].getNeighborSum();
+                if(largest < temp){
+                    largest =  temp;
+                }
             }
+            
         }
-        return sum;
-
+        return largest;
     }
 
 }

@@ -27,7 +27,7 @@ public class Cell
     
     public int getNeighborSum(){
         int sum = 0;
-        for (int i =0; i<neighbors.length; i++){
+        for (int i = 0; i < neighbors.length; i++){
             if(neighbors[i] != null){
                 sum += neighbors[i].getInt();
             }
