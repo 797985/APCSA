@@ -8,7 +8,7 @@
 public class MatrixRunner{
     
     public static void main(){
-      CellMatrix cm = new CellMatrix(3, 4);  
+      CellMatrix cm = new CellMatrix(8, 11);  
       cm.loadMatrix();
       cm.loadCellNeighbors();
       cm.printMatrix();

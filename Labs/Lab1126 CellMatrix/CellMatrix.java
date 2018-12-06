@@ -52,6 +52,7 @@ public class CellMatrix{
         for(int r=0; r<cells.length; r++){
             for(int c=0; c<cells[r].length; c++){
                 if(r > 0){ //get north
+                    Cell[] n = 
                     cells[r][c].getNeighbors()[0]=cells[r-1][c];
                 }
                 if(c>0){ //get west
