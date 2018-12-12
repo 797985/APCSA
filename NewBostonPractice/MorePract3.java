@@ -11,7 +11,7 @@ public class MorePract3
     //Have to use class name in consructor
     
     public MorePract3(String name){ 
-        //A Constructorallows u to initialize variables as an object is created
+        //A Constructor allows u to initialize variables as an object is created
         friendName=name;
     }
     
