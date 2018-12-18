@@ -39,4 +39,11 @@ public class Student2
     {
         return stuActive;
     }
+    public void setStuGPA(){
+        stuGPA = (4+4+4+4+3+4+4+3+4+3+3+4+4+5+5+4+4+4)/18;
+    }
+    public double getStuGPA(){
+        return stuGPA;
+    }
+    
 }

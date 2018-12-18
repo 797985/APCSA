@@ -11,6 +11,6 @@ public class StudentRunner
     public static void main(){
         Student2 s2 = new Student2();
         System.out.println(s2.getStuNumber());
-        
+        System.out.println(s2.getStuGPA());
     }
 }

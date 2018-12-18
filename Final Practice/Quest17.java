@@ -7,9 +7,10 @@
  */
 public class Quest17
 {
-    String s = "Strings are friends, not food";
-int x = s.indexOf("friends");
-int y = s.indexOf("food");
-String str = s.substring(0, x) + "g" + s.substring(y + 1);
-
+    public static void main(String args[]){
+        String s = "Strings are friends, not food";
+        int x = s.indexOf("friends");
+        int y = s.indexOf("food");
+        String str = s.substring(0, x) + "g" + s.substring(y + 1);
+    }
 }
