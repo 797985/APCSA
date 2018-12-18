@@ -17,5 +17,5 @@ public class Quest16
         }
         System.out.println("the total is:" + total);
     }
-
+ 
 }
